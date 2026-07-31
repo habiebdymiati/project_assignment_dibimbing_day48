@@ -87,6 +87,15 @@ Broker dan topic yang sama seperti sebelumnya (`practice-topic`) — kali ini di
 
 ## 1. Install library
 
+Buat dan aktifkan virtual environment (PowerShell):
+
+```
+python -m venv kafka_venv
+.\kafka_venv\Scripts\Activate.ps1
+```
+
+Lalu install client Kafka:
+
 ```
 pip install confluent-kafka
 ```
