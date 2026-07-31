@@ -200,7 +200,4 @@ Jalankan ulang consumer CLI dari Hands-On 1 dengan group baru supaya membaca dar
 docker exec -it kafka /opt/kafka/bin/kafka-console-consumer.sh --topic practice-topic --from-beginning --bootstrap-server localhost:9092
 ```
 
-Bandingkan outputnya dengan hasil `consumer.py`:
-- Topic dan pesan yang dibaca sama persis.
-- Format tampilan berbeda: CLI menampilkan raw string, sedangkan `consumer.py` sudah di-parse jadi dictionary Python karena payload dikirim sebagai JSON.
-- Client berbeda (`kafka-console-consumer.sh` vs `confluent-kafka` Python), tapi keduanya berbicara ke broker yang sama lewat protokol Kafka yang sama.
+Bandingkan outputnya dengan hasil `consumer.py`.
