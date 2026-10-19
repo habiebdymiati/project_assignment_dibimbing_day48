@@ -192,12 +192,10 @@ python python/consumer.py
 
 Tekan `Ctrl+C` untuk keluar setelah kelima event tampil.
 
-## 5. Bonus: bandingkan dengan consumer CLI di Hands-On 1
+## Membersihkan environment
 
-Jalankan ulang consumer CLI dari Hands-On 1 dengan group baru supaya membaca dari awal:
+Hentikan dan hapus container beserta volume data Kafka:
 
 ```
-docker exec -it kafka /opt/kafka/bin/kafka-console-consumer.sh --topic practice-topic --from-beginning --bootstrap-server localhost:9092
+docker compose down -v
 ```
-
-Bandingkan outputnya dengan hasil `consumer.py`.
